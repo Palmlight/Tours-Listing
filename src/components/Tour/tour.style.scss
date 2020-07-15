@@ -5,6 +5,7 @@
     border-radius: 0.8rem;
     margin: 1rem 0;
     
+    
     .img-container{
         position: relative;
 
@@ -34,25 +35,32 @@
         }
     }
 
-    h3 {
-        text-transform: uppercase;
-        color: $mainGreen;
-    }
-
-    h4{
-        text-transform: capitalize;
-        color: $mainBlack;
-        margin: 0.2rem 0 0.3rem 0;
-    }
-    h5{
-        text-transform: capitalize;
-        font-size: 1.2rem;
-
-        span{
+    .tour-info{
+        padding: 10px;
+        h3 {
+            text-transform: uppercase;
             color: $mainGreen;
-            margin: auto 0.5rem;
+        }
+    
+        h4{
+            text-transform: capitalize;
+            color: $mainBlack;
+            margin: 0.2rem 0 0.3rem 0;
+        }
+        h5{
+
+            text-transform: capitalize;
             font-size: 1.2rem;
-            cursor: pointer;
+    
+            span{
+                display: inline-block;
+                color: $mainGreen;
+                text-align: center;
+                vertical-align: middle;
+                margin: auto 0.5rem;
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
         }
     }
 }

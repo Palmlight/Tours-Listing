@@ -10,12 +10,20 @@ export default class TourList extends Component {
             tours: tourData
         }
     }
+
+    removeTour = id => {
+        const {tours} = this.state
+        this.setState({
+            tours: tours.filter(item => id !== item.id)
+        })
+    }
+
     render() {
 
         const {tours} = this.state
         return (
             <section className='tourlist'>
-                {tours.map(tour => <Tour key={tour.id}tour={tour}/>)}               
+                {tours.map(tour => <Tour key={tour.id}tour={tour} removeTour={this.removeTour}/>)}               
             </section> 
         )
     }
